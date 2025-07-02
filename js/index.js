@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <a href="musica.html">Música</a>
       <a href="video.html">Vídeo</a>
     </nav>
-    <h1>🏠 Bem-vindo ao MogueSync</h1>
+    <h1>🏠 Bem-vindo ao </h1>
     <p>Explore música e vídeos diretamente do seu dispositivo.</p>
     <ul>
       <li>🎵 Acesse a <a href="musica.html">página de Música</a> para curtir suas faixas favoritas.</li>
