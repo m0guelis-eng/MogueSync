@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
       <a href="musica.html">Música</a>
       <a href="video.html">Vídeo</a>
     </nav>
-    <h1>🎬 Moguesync</h1>
+    <h1>🎬 MogueSync</h1>
     <p>Escolha um vídeo do seu dispositivo:</p>
     <input type="file" id="arquivo-video" accept="video/*">
     <div id="nome-video"></div>
