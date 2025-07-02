@@ -1,0 +1,136 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 40px 20px;
+  line-height: 1.5;
+}
+
+h1 {
+  color: #1db954;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 0 0 8px #1db954aa;
+}
+
+p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 30px auto;
+  color: #cfcfcf;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul li {
+  margin: 12px 0;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background: #1e1e1e;
+  transition: background-color 0.3s;
+}
+
+ul li:hover {
+  background-color: #1db954;
+  color: #000000; /* Texto preto real */
+  cursor: default;
+}
+
+
+a {
+  color: #1db954;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #1e1e1e;
+  padding: 12px 0;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 8px rgb(29 185 84 / 0.3);
+}
+
+nav a {
+  color: #a5d6a7;
+  margin: 0 18px;
+  padding: 10px 22px;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #1db954;
+  color: #121212;
+  text-decoration: none;
+}
+
+nav a.active {
+  background-color: #1db954;
+  color: #121212;
+  font-weight: 700;
+  box-shadow: 0 0 10px #1db954;
+}
+
+.nav-button.active {
+    background-color: transparent;
+    box-shadow: none;
+    color: white;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+  body {
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  ul {
+    max-width: 100%;
+  }
+
+  ul li {
+    font-size: 1rem;
+    margin: 8px 0;
+    padding: 12px 15px;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 15px 10px;
+    margin-bottom: 30px;
+  }
+
+  nav a {
+    margin: 8px 0;
+    padding: 12px 0;
+    font-size: 1rem;
+  }
+}

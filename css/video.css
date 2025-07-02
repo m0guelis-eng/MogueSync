@@ -1,0 +1,149 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  text-align: center;
+  padding: 40px 20px;
+  line-height: 1.5;
+}
+
+h1 {
+  color: #1db954;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 0 0 8px #1db954aa;
+}
+
+input[type="file"] {
+  margin: 25px 0;
+  padding: 12px 18px;
+  border-radius: 10px;
+  background-color: #1e1e1e;
+  border: 2px solid #1db954;
+  color: #e0e0e0;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s, border-color 0.3s;
+  max-width: 320px;
+  width: 100%;
+  box-shadow: 0 0 10px #1db95455;
+}
+
+input[type="file"]:hover {
+  background-color: #1db954;
+  border-color: #1ed760;
+  color: #121212;
+}
+
+#nome-video {
+  margin: 20px 0 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #b5f3a7;
+  text-shadow: 0 0 4px #1db954bb;
+}
+
+video {
+  width: 90%;
+  max-width: 800px;
+  border: 3px solid #1db954;
+  border-radius: 16px;
+  margin-top: 25px;
+  box-shadow: 0 0 30px #1db954aa;
+  transition: box-shadow 0.3s ease;
+}
+
+video:hover {
+  box-shadow: 0 0 40px #1ed760dd;
+}
+
+a {
+  color: #1db954;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+a:hover {
+  color: #1ed760;
+  text-shadow: 0 0 5px #1ed760aa;
+  text-decoration: underline;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #1e1e1e;
+  padding: 14px 0;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 6px 12px rgb(29 185 84 / 0.4);
+}
+
+nav a {
+  color: #a5d6a7;
+  margin: 0 20px;
+  padding: 12px 26px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+nav a:hover {
+  background-color: #1db954;
+  color: #121212;
+  box-shadow: 0 0 12px #1db954bb;
+  text-decoration: none;
+}
+
+nav a.active {
+  background-color: #1db954;
+  color: #121212;
+  font-weight: 700;
+  box-shadow: 0 0 16px #1db954cc;
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+  body {
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  input[type="file"] {
+    max-width: 100%;
+    padding: 14px 20px;
+  }
+
+  #nome-video {
+    font-size: 1.2rem;
+    margin: 15px 0 8px;
+  }
+
+  video {
+    width: 100%;
+    max-width: 100%;
+    border-width: 2.5px;
+  }
+
+  nav {
+    flex-direction: column;
+    padding: 18px 10px;
+    margin-bottom: 30px;
+  }
+
+  nav a {
+    margin: 10px 0;
+    padding: 14px 0;
+    font-size: 1.1rem;
+  }
+}
