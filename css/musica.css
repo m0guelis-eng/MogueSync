@@ -1,31 +1,41 @@
+/* =======================
+   Estilos Gerais e Layout
+========================== */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #121212;
   color: #e0e0e0;
   text-align: center;
   padding: 40px 20px;
-  line-height: 1.5;
+  line-height: 1.6;
+  margin: 0;
 }
 
+/* =======================
+   Cabeçalho e Títulos
+========================== */
 h1 {
   color: #1db954;
   font-size: 2.8rem;
   margin-bottom: 15px;
   font-weight: 700;
-  text-shadow: 0 0 8px #1db954aa;
+  text-shadow: 0 0 8px rgba(29, 185, 84, 0.6);
 }
 
+/* =======================
+   Input de Arquivo
+========================== */
 input[type="file"] {
   margin: 20px 0;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 6px;
   background-color: #1e1e1e;
-  border: none;
+  border: 1px solid #333;
   color: #e0e0e0;
   cursor: pointer;
   max-width: 300px;
   width: 100%;
-  transition: background-color 0.3s;
+  transition: all 0.3s ease;
 }
 
 input[type="file"]:hover {
@@ -33,6 +43,9 @@ input[type="file"]:hover {
   color: #121212;
 }
 
+/* =======================
+   Player de Áudio
+========================== */
 audio {
   margin-top: 20px;
   width: 100%;
@@ -41,6 +54,9 @@ audio {
   outline: none;
 }
 
+/* =======================
+   Nome da Música
+========================== */
 #nome-musica {
   margin-top: 10px;
   font-weight: 700;
@@ -48,6 +64,9 @@ audio {
   font-size: 1.2rem;
 }
 
+/* =======================
+   Links Gerais
+========================== */
 a {
   color: #1db954;
   text-decoration: none;
@@ -60,20 +79,24 @@ a:hover {
   text-decoration: underline;
 }
 
+/* =======================
+   Navegação
+========================== */
 nav {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   background-color: #1e1e1e;
-  padding: 12px 0;
+  padding: 12px;
   border-radius: 8px;
   margin-bottom: 40px;
-  box-shadow: 0 4px 8px rgb(29 185 84 / 0.3);
+  box-shadow: 0 4px 8px rgba(29, 185, 84, 0.3);
 }
 
 nav a {
   color: #a5d6a7;
-  margin: 0 18px;
-  padding: 10px 22px;
+  margin: 0 14px;
+  padding: 10px 20px;
   font-size: 1.1rem;
   border-radius: 6px;
   transition: background-color 0.3s, color 0.3s;
@@ -92,7 +115,9 @@ nav a.active {
   box-shadow: 0 0 10px #1db954;
 }
 
-/* Responsivo para celulares */
+/* =======================
+   Responsividade
+========================== */
 @media (max-width: 600px) {
   body {
     padding: 25px 15px;
@@ -103,8 +128,8 @@ nav a.active {
   }
 
   input[type="file"] {
-    max-width: 100%;
     padding: 12px;
+    max-width: 100%;
   }
 
   audio {
@@ -123,7 +148,7 @@ nav a.active {
 
   nav a {
     margin: 8px 0;
-    padding: 12px 0;
+    padding: 12px;
     font-size: 1rem;
   }
 }
